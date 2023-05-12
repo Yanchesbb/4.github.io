@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+    <title>Drama Team</title>
+    </head>
+<body> 
+    <form class="form">
+        <div class="form__header">
+                <h2 align="center">Заявление на вступление в танцевальную команду Drama Team </h3><hr/>
+        </div>
+        <div class="form__body">
+         <div class="form__col">
+          <div class="form__group">
+            <label for="first-name">имя</label><br/>
+            <input 
+            type="text" 
+            name="first-name" 
+            id="first-name" 
+            class="form__control"
+            placeholder="имя"
+            />
+            </div>
+          <div class="form__group">
+            <select class="select-css">
+                <option value="s0">выберите интересующий вас стиль танца</option>
+                <option value="s1">хип-хоп</option>
+                <option value="s2">народный</option>
+                <option value="s3">брейкданс</option>
+                <option value="s4">стэп</option>
+                <option value="s5">уличный</option>
+                <option value="s6">афро</option>
+                <option value="s7">контемп</option>
+                <option value="s8">крамп</option>
+                <option value="s9">балет</option>
+            </select>
+         </div>
+         <div class="form__group">
+            <label for="transformation">есть ли танцевальный опыт</label><br/>
+            <input 
+                type="radio"
+                name="answer"
+                value="yes">
+                да
+            <input 
+                type="radio"
+                name="answer" 
+                value="no">
+                нет
+        </div>
+        </div>  
+        <div class="form__col">
+            <div class="form__group">
+            <label for="last-name">фамилия</label><br/>
+            <input 
+            type="text" 
+            name="last-name" 
+            id="last-name" 
+            class="form__control"
+            placeholder="фамилия"
+            />
+        </div>
+        <div class="form__group">
+            <label for="date">дата рождения</label><br/>
+            <input
+                type="date"
+                name="birth"
+                class="form__control"
+                />
+        </div>
+         </div>
+        <div class="form__col">
+            <div class="form__group">
+              <label for="bio">расскажи о себе</label><br />
+              <textarea
+                name="bio"
+                id="bio"
+                cols="30"
+                rows="10"
+                class="form__control form__control--grow"
+		        placeholder="например,в каких коллективах учавствовал(а), был ли опыт выступления на большой сцене, в каких направлениях развивался или хотел бы развиватся, сколько лет/месяцев ты танцуешь."
+                ></textarea>
+            </div>
+            <div class="form__group">
+                <label for="estimation">оцените свой танцевальный скилл от 1 до 10</label><br/>
+                <input
+                    type="number"
+                    min="1"
+                    max="10"
+                    value="1"
+                    step="1"
+                    class="form__control"
+                    />
+              </div>
+             </div>
+            </div>
+               <button type="submit" class="form__submit">
+        Отправить
+      </button>
+    </form>
+</body>
+</html>
